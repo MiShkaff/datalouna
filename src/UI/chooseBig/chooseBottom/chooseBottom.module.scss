@@ -1,0 +1,9 @@
+.chooseBottom {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:768px) {
+    .chooseBottom {
+        display: block;
+    }
+}

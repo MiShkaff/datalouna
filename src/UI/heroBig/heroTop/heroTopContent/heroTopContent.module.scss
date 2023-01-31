@@ -1,0 +1,80 @@
+@import '../../../../variables.scss';
+
+.heroTopContent {
+    position: relative;
+    z-index: 5;
+    .head {
+        margin-bottom: 40px;
+        max-width: 676px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+    }
+    .descTop {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140.02%;
+        color:$yellow-color;
+        span {
+            color:white;
+        }
+    }
+    .descBottom {
+        margin-bottom: 40px;
+        max-width: 540px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+    }
+    .btn {
+        display: flex;
+        text-align: center;
+        padding: 16px 34px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        border:1px solid $yellow-color;
+        color: $dark-color;
+        background: $yellow-color;
+        border-radius: 50px;
+        text-transform: uppercase;
+        transition:$transition;
+        .icon {
+            margin-left: 15px;
+            transition: $transition;
+        }
+    }
+    .btn:hover {
+        background-color: transparent;
+        color:$yellow-color;
+        .icon {
+            fill:$yellow-color;
+        }
+    }
+}
+
+
+@media(max-width:1180px) {
+    .head {
+        font-size: 40px !important;
+    }
+    .descTop {
+        font-size: 15px !important;
+    }
+}
+@media(max-width:992px) {
+    .head {
+        font-size: 30px !important;
+        line-height: 38px !important;
+    }
+}
+@media(max-width:575px) {
+    .heroTopContent {
+        margin-bottom: 20px;
+    }
+}

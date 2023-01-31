@@ -1,0 +1,18 @@
+.heroTopImg {
+    // position: absolute;
+    // right: -15px;
+    background-image: url('../../../../img/heroImg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 400px;
+}
+
+@media(max-width:575px) {
+    .heroTopImg {
+        display: block;
+        margin: 0 auto;
+        height: 255px;
+        width: auto;
+    }
+}

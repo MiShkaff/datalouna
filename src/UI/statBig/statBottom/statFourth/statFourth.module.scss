@@ -1,0 +1,60 @@
+@import '../../../../variables.scss';
+
+.statFourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid $dark-color;
+    border-radius: 30px;
+    flex-basis: 50%;
+    min-height: 100%;
+    padding: 50px 30px;
+    .head {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    .greyText {
+        // display: block;
+        // margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .desc {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    .listDescs {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+        &::before {
+            content: "";
+            position: relative;
+            top: 11px;
+            transform: translateX(-15px);
+            display: block;
+            height: 5px;
+            width: 5px;
+            background-color: wheat;
+            border-radius: 50%;
+        }
+    }
+}

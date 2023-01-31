@@ -1,0 +1,50 @@
+@import '../../../variables.scss';
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0px;
+    border: 5px solid $dark-color;
+    border-radius: 30px;
+    flex-basis: 45%;
+    padding-left: 65px;
+    padding-right: 65px;
+    min-height: 100%;
+    .head {
+        margin-bottom: 10px;
+        max-width: 376px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    .name {
+        display: block;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .desc {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+}
+@media(max-width:992px) {
+    .contactLeft {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:575px) {
+    .contactLeft {
+        margin-bottom: 20px;
+        padding: 60px 20px;
+    }
+}

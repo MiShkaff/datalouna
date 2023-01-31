@@ -1,0 +1,12 @@
+@import '../../../mixins.scss';
+@import '../../../variables.scss';
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    &__name {
+        font-weight: 600;
+        margin-left: 15px;
+        color:white;
+    }
+}

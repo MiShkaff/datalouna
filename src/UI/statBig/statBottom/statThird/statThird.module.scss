@@ -1,0 +1,27 @@
+@import '../../../../variables.scss';
+
+.statThird {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 70px 30px;
+    flex-basis: 50%;
+    max-width: 100%;
+    border:5px solid $dark-color;
+    border-radius: 30px;
+    .statThirdImg {
+        background-image: url('../../../../img/statImg-2new.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 388px;
+    }
+}
+@media(max-width:768px) {
+    .statThird {
+        margin-right: 0px;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+}

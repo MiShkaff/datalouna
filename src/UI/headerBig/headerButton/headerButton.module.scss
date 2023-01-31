@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+.btn {
+    padding: 13px 27px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    border:1px solid $yellow-color;
+    color:$dark-color;
+    background: $yellow-color;
+    border-radius: 50px;
+    transition: $transition;
+    text-transform: uppercase;
+    &:hover {
+        background-color: transparent;
+        color:$yellow-color
+    }
+}
+@media(max-width:992px) {
+    .btn {
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.heroBottom {
+    display: flex;
+}
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 33.3%;
+    padding: 20px 30px;
+    background-color: $dark-bckg-color;
+    border-radius: 20px;
+    .cardNumber {
+        margin-right: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 140.02%;
+        color: $yellow-color;
+        font-style: italic;
+    }
+    .cardDesc {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+    }
+}
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+@media(max-width:992px) {
+    .card {
+        display: block;
+    }
+}
+@media(max-width:768px) {
+    .heroBottom {
+        display: block;
+    }
+    .card {
+        display: flex;
+    }
+    .card:not(:last-child) {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}

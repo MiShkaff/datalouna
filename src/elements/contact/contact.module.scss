@@ -1,0 +1,17 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+.contact {
+    position: relative;
+    padding-bottom: 100px;
+    .contactBig {
+        position: relative;
+        z-index: 2;
+        @include container();
+    }
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 620px;
+    }
+}

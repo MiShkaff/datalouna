@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.footer {
+    background-color: $dark-color;
+}
+.footerBig {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 69px 20px;
+    .desc {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+        transition:$transition;
+        &:hover {
+            color:$yellow-color;
+        }
+    }
+}
+@media(max-width:575px) {
+    .footerBig {
+        display: block;
+    }
+    .desc {
+        margin-bottom: 10px;
+    }
+}

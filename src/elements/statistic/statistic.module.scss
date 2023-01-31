@@ -1,0 +1,7 @@
+@import '../../mixins.scss';
+
+.statistic {
+    position: relative;
+    z-index: 2;
+    @include container;
+}

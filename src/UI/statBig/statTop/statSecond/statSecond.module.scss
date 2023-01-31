@@ -1,0 +1,24 @@
+@import '../../../../variables.scss';
+
+.statSecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 30px;
+    background-color: $dark-color;
+    border:5px solid $dark-color;
+    border-radius: 30px;
+    flex-basis: 50%;
+    .statSecondImg {
+        background-image: url('../../../../img/statImg-1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 363px;
+    }
+}
+@media(max-width:768px) {
+    .statSecond {
+        padding: 30px;
+    }
+}

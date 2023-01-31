@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.hero {
+    @include container();
+    &Big {
+        position: relative;
+        z-index: 4;
+        padding: 71px 30px 50px;
+        background: $dark-color;
+        border-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    &Top {
+        display: flex;
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:575px) {
+    .heroTop {
+        display: block;
+    }
+}

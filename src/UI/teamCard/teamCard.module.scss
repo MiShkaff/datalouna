@@ -1,0 +1,104 @@
+@import '../../variables.scss';
+
+.teamCard {
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-basis: 32.7%;
+    min-height: 331px;
+    background-color: $dark-color;
+    border-radius: 30px;
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px 33px 30px;
+    }
+    .head {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .speciallity {
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.5;
+        text-transform: uppercase;
+    }
+    .desc {
+        position: relative;
+        z-index: 2;
+        max-width: 279px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140.02%;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .role {
+        margin-bottom: 10px;
+    }
+    .image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .icon {
+        position: absolute;
+        z-index: 4;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+}
+.teamCard:nth-child(1n + 4) {
+    margin-bottom: 0px;
+}
+.teamCard:nth-child(3n + 3) {
+    margin-right: 0px;
+}
+
+@media(max-width:1180px) {
+    .teamCard {
+        flex-basis: 48%;
+    }
+    .teamCard:nth-child(2) {
+        margin-right: 0px;
+    }
+    .teamCard:nth-child(1n + 4) {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .teamCard:nth-child(3n + 3) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .teamCard:nth-child(1n + 5) {
+        margin-bottom: 0px;
+    }
+    .teamCard:nth-child(2n + 3) {
+        margin-right: 10px;
+    }
+}
+@media(max-width:992px) {
+    .teamCard {
+        flex-basis: 49.2%;
+    }
+}
+@media(max-width:768px) {
+    .teamCard {
+        margin-right: 0px !important;
+    }
+    .teamCard:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

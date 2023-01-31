@@ -1,0 +1,9 @@
+.statBottom {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:768px) {
+    .statBottom {
+        display: block;
+    }
+}

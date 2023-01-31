@@ -1,0 +1,7 @@
+@import '../../mixins.scss';
+
+.chooseBig {
+    @include container();
+    position:relative;
+    z-index: 2;
+}

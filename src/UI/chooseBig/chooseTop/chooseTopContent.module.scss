@@ -1,0 +1,26 @@
+@import '../../../variables.scss';
+.chooseTopContent {
+    margin-bottom: 100px;
+    .head {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    .desc {
+        max-width: 705px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140.02%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.7;
+        span {
+            color: $yellow-color;
+        }
+    }
+}
